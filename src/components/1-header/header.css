@@ -1,0 +1,142 @@
+/* ! header design */
+header ul {
+    gap: 18px;
+}
+
+header ul li a {
+    color: var(--title-color);
+    opacity: 0.9;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+header ul li a:hover {
+    color: var(--blue);
+    opacity: 1;
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+header {
+    justify-content: space-between;
+    padding: 1rem 2.5rem;
+}
+
+header nav {
+    background-color: var(--bg-header);
+    padding: 1rem 2rem;
+    border-radius: 55px;
+    box-shadow: 0.5px 0.5px 20px var(--blue);
+}
+
+.light header nav {
+    background-color: var(--bg-header);
+    padding: 1rem 2rem;
+    border-radius: 55px;
+    box-shadow: 0.5px 0.5px 20px red;
+}
+
+/*! icons */
+header .icon-menu,
+header .mode {
+    background-color: var(--bg-header);
+    color: var(--subtitle-color);
+    height: 2.4rem;
+    width: 2.4rem;
+    justify-content: center;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid var(--border-dark);
+}
+
+header .icon-menu:hover,
+header .mode:hover {
+    border: 1px solid var(--icons-color-hover);
+    color: var(--title-color);
+}
+
+header .icon-close {
+    font-size: 1.5rem;
+    color: var(--subtitle-color);
+    transition: 0.8s;
+    font-weight: bold;
+}
+
+header .icon-close:hover {
+    font-size: 1.9;
+    color: crimson;
+    rotate: 180deg;
+}
+
+.light header .icon-sun {
+    font-size: 1.2rem;
+    color: orange;
+}
+
+/*! pop up */
+header .menu {
+    display: none;
+}
+
+header .fixed {
+    position: fixed;
+    inset: 0;
+    z-index: 11;
+    background-color: rgba(34, 34, 41, 0.85);
+}
+
+@keyframes mymove {
+    0% {
+        scale: 0;
+    }
+
+    60% {
+        scale: 1.2;
+    }
+
+    100% {
+        scale: 1;
+    }
+}
+
+
+header .fixed ul {
+    animation: mymove 0.5s 1;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    background-color: var(--secondary-dark-bg);
+}
+
+header .fixed li {
+    border-bottom: 1px solid var(--border-dark);
+    padding-bottom: 0.8rem;
+    padding-top: 0.5rem;
+}
+
+header .fixed li a {
+    font-size: 1rem;
+}
+
+
+header .fixed ul li:first-child {
+    text-align: right;
+    border: none;
+    padding-bottom: 0;
+    padding-top: 0.2rem;
+}
+
+
+@media (max-width: 700px) {
+    header nav {
+        display: none;
+    }
+
+    header .menu {
+        display: block;
+    }
+
+}

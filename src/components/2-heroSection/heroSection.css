@@ -1,0 +1,64 @@
+/*! left side */
+section .leftSection {
+    flex-grow: 1;
+}
+
+section .parent-avatar {
+    align-items: end;
+}
+
+section .avatar {
+    width: 200px;
+    border-radius: 50%;
+    border: 3px solid red;
+    padding: 8px;
+    transition: 0.2s;
+}
+
+section .avatar:hover {
+    box-shadow: 0.5px 0.5px 30px var(--blue);
+    border: 3px solid var(--blue);
+}
+
+section .icon-verified {
+    color: var(--blue);
+    font-size: 1.5rem;
+    margin-bottom: 0.2rem;
+}
+
+section .title {
+    font-size: 3rem;
+    line-height: 3.3rem;
+    margin: 25px 0;
+    color: var(--title-color);
+}
+
+section .subTitle {
+    color: var(--subtitle-color);
+    line-height: 1.6rem;
+    margin-bottom: 32px;
+}
+
+section .icons a {
+    font-size: 1.5rem;
+    /* gap: 1rem; */
+    padding-right: 1rem;
+    color: var(--subtitle-color);
+}
+
+section .icons .icon:hover {
+    color: var(--title-color);
+    rotate: 360deg;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.animation {
+    width: 100%;
+}
+
+@media (max-width:1250px) {
+    .animation {
+        display: none;
+    }
+}

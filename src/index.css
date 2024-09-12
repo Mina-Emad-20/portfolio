@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap');
+
+* {
+    font-family: "Handjet", sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--primary-dark-bg);
+    color: white;
+}
+
+:root {
+    --primary-dark-bg: #000;
+    --secondary-dark-bg: #18181B;
+    --border-dark: rgba(63, 63, 70, 0.4);
+    --title-color: rgba(244 244 245);
+    --subtitle-color: rgba(161 161 170);
+    --bg-header: rgba(39 39 42);
+    --blue: rgba(93, 188, 252);
+    --icons-color-hover: orange;
+}
+
+.light {
+    --primary-dark-bg: rgb(240, 240, 240);
+    --secondary-dark-bg: #fff;
+    --border-dark: rgba(202, 202, 202, 0.518);
+    --title-color: rgba(39, 39, 42);
+    --subtitle-color: rgba(82, 82, 91);
+    --bg-header: rgba(253, 253, 253);
+    --blue: rgba(0, 149, 246);
+    --icons-color-hover: orange;
+}
+
+
+button {
+    all: unset;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:active {
+    scale: 0.8;
+}
+
+a {
+    text-decoration: none;
+    color: initial;
+    transition: 0.2s;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid var(--border-dark);
+    background-color: var(--secondary-dark-bg);
+    padding: 0 5rem;
+}
+
+.devider {
+    border-bottom: 1px solid var(--border-dark);
+    margin: 2rem 2rem;
+}
+
+.border {
+    border: 1px solid red;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.scroll-button {
+    background-color: var(--blue);
+    height: 40px;
+    width: 40px;
+    color: var(--title-color);
+    border: 1px solid var(--subtitle-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 3px;
+    transition: 0.2s;
+    position: fixed;
+    bottom: 2rem;
+    right: 1rem;
+}
+
+.scroll-button:hover {
+    background-color: red;
+    box-shadow: 0.5px 0.5px 25px red;
+    border: 1px solid var(--title-color);
+    cursor: pointer;
+}
+
+
+@media (max-width: 1000px) {
+    .container {
+        width: 85%;
+        padding: 0 1.7rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 0 1.7rem;
+    }
+
+    .scroll-button {
+        opacity: 0.4;
+    }
+}
