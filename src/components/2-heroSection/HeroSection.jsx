@@ -2,6 +2,7 @@ import './heroSection.css'
 import Lottie from "lottie-react";
 import codingAnimation from "../../animation/Animation - 1725992508976.json"
 import { motion } from 'framer-motion';
+import myPhoto from "/mina.jpg";
 
 const HeroSection = () => {
     return (
@@ -13,7 +14,7 @@ const HeroSection = () => {
                         animate={{ scale: 1 }}
                         transition={{ duration: 0.5, type: "spring", stiffness: 120 }}
 
-                        src="/public/mina.jpg" className='avatar' alt="mina's image" />
+                        src={myPhoto} className='avatar' alt="mina's image" />
                     <div className='icon-verified'></div>
                 </div>
                 <motion.h1
