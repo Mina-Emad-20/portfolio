@@ -17,7 +17,10 @@ const Header = () => {
 
     return (
         <header className="flex">
-            <button className="menu icon-menu flex" />
+            <button className="menu icon-menu flex" onClick={() => {
+                setShowModel(true)
+            }
+            } />
             <div />
             <nav>
                 <ul className="flex">
@@ -51,23 +54,17 @@ const Header = () => {
                             } />
                         </li>
                         <li>
-                            <a href="">About</a>
+                            <a href="#hero">About</a>
                         </li>
+
                         <li>
-                            <a href="">Articles</a>
+                            <a href="#main">Projects</a>
                         </li>
+
                         <li>
-                            <a href="">Projects</a>
+                            <a href="#contact">Contact</a>
                         </li>
-                        <li>
-                            <a href="">Speaking</a>
-                        </li>
-                        <li>
-                            <a href="">Contact</a>
-                        </li>
-                        <li>
-                            <a href="">Uses</a>
-                        </li>
+
                     </ul>
                 </div>
             )}
