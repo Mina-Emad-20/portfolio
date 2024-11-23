@@ -41,5 +41,5 @@ export const myProjects = [
 
 
 
-    { title: "Happy-shope E-commerce", description: "E-commerce websites have revolutionized the way we shop. Dive into the world of online shopping and learn the ins and outs of setting up and running a successful e-commerce website", category: "react", imgpath: site_seven, link: "https://spectacular-faun-39e950.netlify.app", github: "https://github.com/Mina-Emad-20/happy-shop-ecommerce" }
+    { title: "E-shop E-commerce", description: "E-commerce websites have revolutionized the way we shop. Dive into the world of online shopping and learn the ins and outs of setting up and running a successful e-commerce website", category: "react", imgpath: site_seven, link: "https://spectacular-faun-39e950.netlify.app", github: "https://github.com/Mina-Emad-20/happy-shop-ecommerce" }
 ]
